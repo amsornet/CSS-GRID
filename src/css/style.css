@@ -6,11 +6,11 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 1.5fr 3fr 1fr;
   grid-gap: 30px;
 }
 
-/* line 13, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 11, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item {
   padding: 20px;
   font-size: 30px;
@@ -18,37 +18,49 @@
   color: white;
 }
 
-/* line 18, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 16, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-1 {
   background-color: red;
-  grid-area: 2 / 2 / 3 /3;
+  grid-column: 1 / 5;
+  grid-row: 2 / 1;
 }
 
-/* line 27, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 21, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-2 {
   background-color: pink;
+  grid-column: 1 / 2;
+  grid-row: 2 /3;
 }
 
-/* line 30, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 26, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-3 {
   background-color: blue;
 }
 
-/* line 32, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 28, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-4 {
   background-color: brown;
 }
 
-/* line 34, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 30, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-5 {
   background-color: orange;
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
 }
 
-/* line 36, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 35, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-6 {
   background-color: green;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+
+/* line 39, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+.item-7 {
+  background-color: yellowgreen;
+  grid-column: 1 / 5;
+  grid-row: 4 / -1;
 }
 
 /*# sourceMappingURL=style.css.map */
