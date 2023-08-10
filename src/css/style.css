@@ -2,14 +2,15 @@
 .container {
   background-color: grey;
   width: 1000px;
+  height: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px;
-  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
-/* line 12, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 13, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item {
   padding: 20px;
   font-size: 30px;
@@ -17,32 +18,32 @@
   color: white;
 }
 
-/* line 17, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 18, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-1 {
   background-color: red;
 }
 
-/* line 19, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 20, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-2 {
   background-color: pink;
 }
 
-/* line 21, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 22, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-3 {
   background-color: blue;
 }
 
-/* line 23, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 24, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-4 {
   background-color: brown;
 }
 
-/* line 25, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 26, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-5 {
   background-color: orange;
 }
 
-/* line 27, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 28, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-6 {
   background-color: green;
 }
