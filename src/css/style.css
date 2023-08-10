@@ -5,12 +5,13 @@
   height: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-col-end];
-  grid-template-rows: [header-start] 1fr [header-end box-start] 1.5fr [box-end main-start] 3fr [main-end footer-start] 1fr [footer-end];
+  grid-template-columns: 1fr 1fr 1fr 200px;
+  grid-template-rows: repeat(3, 1fr) 200px;
   grid-gap: 30px;
+  grid-template-areas: "head head head head " "box-1 box-2 box-3 side" "main main main side" "footer footer footer footer";
 }
 
-/* line 11, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 12, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item {
   padding: 20px;
   font-size: 30px;
@@ -18,49 +19,46 @@
   color: white;
 }
 
-/* line 16, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 17, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-1 {
   background-color: red;
-  grid-column: col-start 1 / grid-col-end;
-  grid-row: header-start / header-end 1;
+  grid-area: head;
 }
 
-/* line 21, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 22, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-2 {
   background-color: pink;
-  grid-column: col-start / col-end;
-  grid-row: box-start / box-end;
+  grid-area: box-1;
 }
 
-/* line 26, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+/* line 27, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-3 {
   background-color: blue;
-}
-
-/* line 28, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
-.item-4 {
-  background-color: brown;
+  grid-area: box-2;
 }
 
 /* line 30, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
-.item-5 {
-  background-color: orange;
-  grid-column: col-end 3 / grid-col-end;
-  grid-row: box-start / main-end;
+.item-4 {
+  background-color: brown;
+  grid-area: box-3;
 }
 
-/* line 35, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
-.item-6 {
-  background-color: green;
-  grid-column: col-start / span col-end 3;
-  grid-row: main-start / main-end;
+/* line 34, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+.item-5 {
+  background-color: orange;
+  grid-area: side;
 }
 
 /* line 39, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
+.item-6 {
+  background-color: green;
+  grid-area: main;
+}
+
+/* line 43, ../HTML_Fokeev/CSS_Grid/CSS_GRID/src/sass/style.sass */
 .item-7 {
   background-color: yellowgreen;
-  grid-column: col-start / grid-col-end;
-  grid-row: 4 / -1;
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=style.css.map */
